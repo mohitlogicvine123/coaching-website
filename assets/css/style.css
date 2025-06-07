@@ -71,6 +71,7 @@ body {
   html,
 body {
     font-size: 15px;
+    line-height: 170%;
   }
 }
 
@@ -459,7 +460,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .mil-suptitle {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 }
 
@@ -887,6 +888,9 @@ spaces
   .mil-mb-90 {
     margin-bottom: 50px;
   }
+  .mil-mb-30 {
+    margin-bottom: 15px;
+  }
 }
 
 .mil-mt-suptitle-offset {
@@ -906,6 +910,12 @@ spaces
   .mil-p-120-120 {
     padding-top: 90px;
     padding-bottom: 90px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mil-p-120-120 {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1021,6 +1031,12 @@ spaces
 @media screen and (max-width: 992px) {
   .mil-p-120-30 {
     padding-top: 90px;
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mil-p-120-30 {
+    padding-top: 60px;
     padding-bottom: 0;
   }
 }
@@ -1751,16 +1767,34 @@ banner
 }
 @media screen and (max-width: 992px) {
   .mil-banner-personal .mil-banner-content {
-    padding-top: 180px;
+    padding-top: 130px;
   }
 }
 .mil-banner-personal .mil-banner-content .mil-personal-text {
-  margin-bottom: 300px;
+  margin-bottom: 200px;
 }
 @media screen and (max-width: 992px) {
   .mil-banner-personal .mil-banner-content .mil-personal-text {
-    margin-bottom: 80px;
+    margin-bottom: 0px;
     text-align: center;
+  }
+  .mil-portrait-frame {
+    width: 70%;
+    margin-inline: auto;
+  }
+}
+@media screen and (max-width: 767px)  {
+  .mil-portrait-frame {
+    width: 100%;
+  }
+  .team-detail-name {
+    margin-bottom: 15px;
+  }
+  .team-detail-para {
+    margin-bottom: 15px;
+  }
+  .team-detail-title {
+    margin-bottom: 10px;
   }
 }
 .mil-banner-personal .mil-banner-content .mil-banner-panel {
@@ -1788,12 +1822,23 @@ banner
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
-    padding: 60px 30px;
+    padding: 30px;
   }
   .mil-banner-personal .mil-banner-content .mil-banner-panel h5 {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     text-align: center;
     width: 80%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mil-banner-personal .mil-banner-content .mil-banner-panel {
+    padding: 20px;
+  }
+  .mil-banner-personal .mil-banner-content .mil-banner-panel h5 {
+    margin-bottom: 20px;
+  }
+  .mil-banner-personal .mil-banner-content .mil-banner-panel .mil-right .mil-social-frame {
+    margin-bottom: 20px !important;
   }
 }
 .mil-banner-personal .mil-banner-content .mil-banner-panel .mil-right {
@@ -1848,7 +1893,7 @@ banner
 @media screen and (max-width: 768px) {
   .mil-banner-personal .mil-banner-content .mil-banner-panel {
     position: static;
-    margin-bottom: 90px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -4269,4 +4314,10 @@ html.is-animating .mil-menu-frame {
 
 .team-blog-section {
   margin-top: 70px;
+}
+
+@media screen and (max-width:767px) {
+  .team-blog-section {
+    margin-top: 50px;
+  }
 }
