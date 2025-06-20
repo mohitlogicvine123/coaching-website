@@ -2750,15 +2750,24 @@ team
 }
 
 @media (max-width:576px){
+  .mil-team-card .mil-description {
+    opacity: 1;
+    height: auto;
+    bottom: 0;
+    top: unset;
+    padding: 10px;
+
+  }
   .mil-team-card .mil-description .mil-secrc-text {
     opacity: 1;
+    margin: 0;
+    transform: unset;
   }
   .mil-team-card .mil-description .mil-secrc-text .mil-muted a {
     color: #ff9800;
   }
-  .mil-team-card .mil-description {
-    opacity: 1;
-    background-color: transparent;
+  .mil-team-card .mil-description .mil-link {
+    margin-bottom: 0;
   }
 }
 /* -------------------------------------------
@@ -3155,7 +3164,7 @@ footer
 
 ------------------------------------------- */
 .mil-footer-menu {
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 .mil-footer-menu ul li {
   list-style-type: none;
@@ -4537,4 +4546,76 @@ html.is-animating .mil-menu-frame {
 .service-section .mil-lines-place {
   position: sticky;
   top: 0;
+}
+
+
+.service-card {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-color: white;
+}
+.service-card .mil-descr {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+}
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 335.21875px !important;
+  left: 291px !important;
+  transform: translate(-50%, -50%);
+  background: radial-gradient( var(--color-primary), transparent, transparent);
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transition: 0.5s, top 0s, left 0s;
+  border-radius: 8px;;
+}
+.service-card::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #fff;
+  border-radius: 8px;
+}
+.service-card>* {
+  position: relative;
+  z-index: 2;
+}
+.service-card:hover::before {
+  opacity: 1;
+}
+.service-card .service-icon {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #ff990048;
+  margin: auto;
+  padding: 8px;
+}
+.service-card .service-icon img {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-text {
+    background: linear-gradient(90deg, #ff9800, #0c3091, #ff9800);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer {
+  background: url(../img/bg-2-1.png) right bottom no-repeat rgb(23, 25, 37) !important;
+}
+.footer::before {
+  display: none;
 }
