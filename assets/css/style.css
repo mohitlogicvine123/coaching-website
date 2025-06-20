@@ -88,7 +88,7 @@ body {
 
 .mil-wrapper {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   max-width: 100%;
 }
 
@@ -674,10 +674,11 @@ form
 
 ------------------------------------------- */
 input,
-textarea {
+textarea,
+select {
   position: relative;
   height: 70px;
-  padding: 0 30px;
+  padding: 0 15px;
   width: 100%;
   font-size: 12px;
   text-transform: uppercase;
@@ -690,31 +691,32 @@ textarea {
   margin-bottom: 30px;
 }
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
   outline: inherit;
 }
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.5);
 }
-input::-moz-placeholder, textarea::-moz-placeholder {
+input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.5);
 }
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.5);
 }
-input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -722,7 +724,9 @@ input::-ms-input-placeholder, textarea::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.5);
 }
 input::placeholder,
-textarea::placeholder {
+select::placeholder,
+textarea::placeholder,
+textarea option::placeholder {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -732,7 +736,7 @@ textarea::placeholder {
 
 textarea {
   padding: 15px 30px;
-  height: 300px;
+  height: 120px;
 }
 
 /* -------------------------------------------
@@ -3530,6 +3534,14 @@ map
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width:767px){
+  .mil-map-frame {
+    height: 300px;
+  }
+  .mil-map-frame .mil-map {
+    position: static;
+  }
+}
 /* -------------------------------------------
 
 accordion
@@ -4517,4 +4529,12 @@ html.is-animating .mil-menu-frame {
       opacity: 0;
     }
   }
+}
+
+.service-section {
+  overflow: visible;
+}
+.service-section .mil-lines-place {
+  position: sticky;
+  top: 0;
 }
