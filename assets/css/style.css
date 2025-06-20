@@ -204,7 +204,7 @@ h1,
 @media screen and (max-width: 768px) {
   h1,
 .mil-h1 {
-    font-size: 34px;
+    font-size: 32px;
   }
 }
 
@@ -748,6 +748,7 @@ breadcrumbs
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  flex-wrap: wrap;
 }
 .mil-breadcrumbs:before {
   content: "";
@@ -2538,7 +2539,7 @@ services
 }
 @media screen and (max-width: 768px) {
   .mil-services-grid {
-    padding-bottom: 90px;
+    padding-bottom: 60px;
   }
   .mil-services-grid .mil-services-grid-item {
     border-left: solid 1px rgba(255, 255, 255, 0.1);
@@ -3584,6 +3585,16 @@ accordion
   list-style-type: disc;
   padding-left: 22px;
 }
+@media screen and (max-width:767px){
+  .mil-accordion-group .mil-accordion-menu .mil-accordion-head {
+    font-size: 13px;
+  }
+  .mil-accordion-group .mil-accordion-menu .mil-symbol {
+    min-width: 35px;
+    width: 35px;
+    height: 35px;
+  }
+}
 
 /***************************
 
@@ -4381,4 +4392,10 @@ html.is-animating .mil-menu-frame {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 20px;
   border-radius: 8px;
+}
+
+@media screen and (max-width:767px) {
+  .content-card {
+    padding: 15px;
+  }
 }
