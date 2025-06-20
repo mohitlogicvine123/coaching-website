@@ -1769,7 +1769,7 @@ banner
 }
 @media screen and (max-width:767px){
    .mil-inner-banner .mil-banner-content {
-    padding-top: 115px;
+    padding-top: 95px;
   }
 }
 
@@ -2516,6 +2516,11 @@ services
     opacity: 1;
   }
 }
+@media screen and (max-width:767px){
+  .mil-service-card-sm{
+    padding: 15px;
+  }
+}
 
 .mil-services-grid {
   border-top: solid 1px rgba(255, 255, 255, 0.1);
@@ -2559,8 +2564,8 @@ services
   text-overflow: ellipsis;
 }
 .mil-service-card-lg.mil-offset {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 992px) {
   .mil-service-card-lg.mil-offset {
@@ -2569,7 +2574,7 @@ services
 }
 @media screen and (max-width: 992px) {
   .mil-service-card-lg {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -3179,7 +3184,10 @@ footer
 }
 @media screen and (max-width: 768px) {
   .mil-footer-menu {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+  }
+  .mil-footer-menu ul li {
+    margin-bottom: 22px;
   }
 }
 
@@ -4393,9 +4401,119 @@ html.is-animating .mil-menu-frame {
   padding: 20px;
   border-radius: 8px;
 }
+.content-card b {
+  font-weight: 600;
+}
+.content-card ul {
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  gap:6px;
+}
+.whatsapp-btn {
+    background: #25d366;
+    color: #fff;
+    bottom: 25px;
+    right: 25px;
+    font-size: 32px;
+    z-index: 10;
+    height: 60px;
+    width: 60px;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    position: fixed;
+    border-radius: 50%;
+}
+.whatsapp-btn a {
+    color: #fff;
+}
+.whatsapp-btn .whatsapp-btn-title {
+    font-size: 14px;
+    color: #000;
+    z-index: 2;
+    width: 150px;
+    left: 115%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #4d4d4d;
+    line-height: 21px;
+    box-shadow: rgba(50, 50, 105, .15) 0px 2px 5px 0px, rgba(0, 0, 0, .05) 0px 1px 1px 0px;
+}
+.whatsapp-btn .whatsapp-btn-title::before {
+    content: "";
+    position: absolute;
+    left: -11px;
+    top: 45%;
+    border-radius: 2px;
+    height: 15px;
+    background: #fff;
+    width: 15px;
+    transform: rotate(45deg) translateY(-50%);
+    z-index: -1;
+}
+.whatsapp-btn .whatsapp-btn-title .btn-close {
+    top: -8px;
+    right: -8px;
+    background-image: none;
+    font-size: 18px;
+    box-shadow: rgba(50, 50, 105, .15) 0px 2px 5px 0px, rgba(0, 0, 0, .05) 0px 1px 1px 0px;
+}
+.whatsapp-btn::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    padding: 20px;
+    border: 5px solid #25d366;
+    opacity: .75;
+    animation-name: pulse-border;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+@keyframes pulse-border {
+    0% {
+        padding: 25px;
+        opacity: .75;
+    }
+    75% {
+        padding: 50px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
 @media screen and (max-width:767px) {
   .content-card {
     padding: 15px;
+  }
+  .whatsapp-btn {
+    bottom: 15px;
+    left: 15px;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+  }
+  .whatsapp-btn .whatsapp-btn::before {
+    padding: 10px;
+  }
+  @keyframes pulse-border {
+    0% {
+      padding: 18px;
+      opacity: .75;
+    }
+    75% {
+      padding: 35px;
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
   }
 }
