@@ -871,23 +871,26 @@ spaces
 }
 
 .mil-mb-90 {
-  margin-bottom: 90px;
+  margin-bottom: 60px;
 }
 
 .mil-mb-120 {
-  margin-bottom: 120px;
+  margin-bottom: 70px;
 }
 @media screen and (max-width: 992px) {
   .mil-mb-120 {
-    margin-bottom: 90px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (max-width:767px){
+  .mil-mb-120 {
+    margin-bottom: 40px;
+  }
   .mil-mb-60 {
     margin-bottom: 30px;
   }
   .mil-mb-90 {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   .mil-mb-30 {
     margin-bottom: 15px;
@@ -904,8 +907,8 @@ spaces
 }
 
 .mil-p-120-120 {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 @media screen and (max-width: 992px) {
   .mil-p-120-120 {
@@ -921,63 +924,63 @@ spaces
 }
 
 .mil-p-120-90 {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 @media screen and (max-width: 992px) {
   .mil-p-120-90 {
-    padding-top: 90px;
+    padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media screen and (max-width:767px) {
   .mil-p-120-90 {
-    padding-top: 60px;
+    padding-top: 50px;
     padding-bottom: 40px;
   }
 }
 
 .mil-p-0-120 {
-  padding-bottom: 120px;
+  padding-bottom: 70px;
 }
 @media screen and (max-width: 992px) {
-  .mil-p-0-120 {
-    padding-bottom: 90px;
-  }
-}
-@media screen and (max-width:767px) {
   .mil-p-0-120 {
     padding-bottom: 60px;
   }
 }
+@media screen and (max-width:767px) {
+  .mil-p-0-120 {
+    padding-bottom: 50px;
+  }
+}
 
 .mil-p-120-0 {
-  padding-top: 120px;
+  padding-top: 70px;
 }
 @media screen and (max-width: 992px) {
   .mil-p-120-0 {
-    padding-top: 90px;
+    padding-top: 50px;
   }
 }
 @media screen and (max-width:767px) {
   .mil-p-120-0 {
-    padding-top: 60px;
+    padding-top: 40px;
   }
 }
 
 .mil-p-120-60 {
-  padding-top: 120px;
+  padding-top: 70px;
   padding-bottom: 60px;
 }
 @media screen and (max-width: 992px) {
   .mil-p-120-60 {
-    padding-top: 90px;
+    padding-top: 60px;
     padding-bottom: 30px;
   }
 }
 @media (max-width:767px){
   .mil-p-120-60 {
-     padding-top: 70px;
+     padding-top: 50px;
     padding-bottom: 20px;
   }
   .container {
@@ -1026,18 +1029,18 @@ spaces
 }
 
 .mil-p-120-30 {
-  padding-top: 120px;
+  padding-top: 70px;
   padding-bottom: 30px;
 }
 @media screen and (max-width: 992px) {
   .mil-p-120-30 {
-    padding-top: 90px;
+    padding-top: 70px;
     padding-bottom: 0;
   }
 }
 @media screen and (max-width: 767px) {
   .mil-p-120-30 {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 0;
   }
 }
@@ -1249,7 +1252,7 @@ frame
 
 .mil-frame {
   padding: 50px 60px 60px 60px;
-  position: fixed;
+  position: absolute;
   z-index: 2;
   pointer-events: none;
   display: -webkit-box;
@@ -1275,6 +1278,17 @@ frame
     padding: 0;
     z-index: 999;
     height: 90px;
+  }
+}
+@media screen and (max-width:767px){
+  .mil-frame {
+    height: 70px;
+  }
+  .mil-logo {
+    font-size: 25px;
+  }
+  .mil-frame .mil-frame-top {
+    padding: 0 20px !important;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1738,6 +1752,11 @@ banner
     padding-bottom: 90px;
   }
 }
+@media screen and (max-width: 767px) {
+  .mil-banner .mil-banner-content {
+    padding-bottom: 70px;
+  }
+}
 .mil-banner .mil-lines-place {
   position: absolute;
   left: 0;
@@ -1769,6 +1788,11 @@ banner
 @media screen and (max-width: 992px) {
   .mil-banner-personal .mil-banner-content {
     padding-top: 130px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mil-banner-personal .mil-banner-content {
+    padding-top: 100px;
   }
 }
 .mil-banner-personal .mil-banner-content .mil-personal-text {
@@ -1808,13 +1832,18 @@ banner
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 60px 0 90px;
+  padding: 20px;
   background-color: rgb(255, 255, 255);
   height: 180px;
   position: absolute;
   top: calc(100vh - 180px);
   left: 0;
   width: 100%;
+}
+.mil-banner-personal .mil-banner-content .mil-banner-panel .about-tutor {
+  color: #333;
+  font-weight: 500;
+  font-size: 15px;
 }
 @media screen and (max-width: 992px) {
   .mil-banner-personal .mil-banner-content .mil-banner-panel {
@@ -1833,13 +1862,14 @@ banner
 }
 @media screen and (max-width: 767px) {
   .mil-banner-personal .mil-banner-content .mil-banner-panel {
-    padding: 20px;
+    padding: 15px;
   }
   .mil-banner-personal .mil-banner-content .mil-banner-panel h5 {
     margin-bottom: 20px;
   }
-  .mil-banner-personal .mil-banner-content .mil-banner-panel .mil-right .mil-social-frame {
-    margin-bottom: 20px !important;
+  .mil-banner-personal .mil-banner-content .mil-banner-panel .about-tutor {
+    font-size: 14px;
+    margin-bottom: 10px;
   }
 }
 .mil-banner-personal .mil-banner-content .mil-banner-panel .mil-right {
@@ -1847,7 +1877,7 @@ banner
   display: -ms-flexbox;
   display: flex;
 }
-.mil-banner-personal .mil-banner-content .mil-banner-panel .mil-right .mil-social-frame {
+.mil-banner-personal .mil-banner-content .mil-banner-panel .mil-right .mil-social-frame a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1857,15 +1887,18 @@ banner
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 30px;
-  padding: 0 50px;
+ 
   background-color: rgba(0, 0, 0, 0.1);
-  height: 70px;
+  height: 60px;
+  width: 60px;
   border-radius: 70px;
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
-.mil-banner-personal .mil-banner-content .mil-banner-panel .mil-right .mil-social-frame:hover {
+.mil-banner-personal .mil-banner-content .mil-banner-panel .mil-right .mil-social-frame a svg {
+  fill: #0a66c2;
+}
+.mil-banner-personal .mil-banner-content .mil-banner-panel .mil-right .mil-social-frame a:hover {
   -webkit-transform: scale(1.015);
           transform: scale(1.015);
 }
@@ -1876,9 +1909,8 @@ banner
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .mil-banner-personal .mil-banner-content .mil-banner-panel .mil-right .mil-social-frame {
+  .mil-banner-personal .mil-banner-content .mil-banner-panel .mil-right .mil-social-frame a {
     margin-right: 0;
-    margin-bottom: 30px;
     height: 60px;
   }
 }
@@ -2544,6 +2576,11 @@ services
     margin-bottom: 60px;
   }
 }
+@media screen and (max-width: 767px) {
+  .mil-service-card-lg {
+    margin-bottom: 30px;
+  }
+}
 .mil-service-card-lg.mil-other-card {
   overflow: hidden;
   position: relative;
@@ -2566,7 +2603,7 @@ services
 }
 @media screen and (max-width: 1200px) {
   .mil-service-card-lg.mil-other-card {
-    padding: 30px;
+    padding: 20px;
   }
 }
 

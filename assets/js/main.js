@@ -1042,3 +1042,16 @@ $(function () {
     });
 
 });
+// Include Header
+fetch("header.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("include-header").innerHTML = data;
+  });
+
+// Include Footer
+fetch("footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("include-footer").innerHTML = data;
+  });
