@@ -4474,6 +4474,7 @@ html.is-animating .mil-menu-frame {
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
+    z-index: -1;
 }
 @keyframes pulse-border {
     0% {

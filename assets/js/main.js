@@ -129,7 +129,15 @@ $(function () {
 
     ***************************/
     $(document).ready(function () {
-        $(".mil-arrow").clone().appendTo(".mil-arrow-place");
+        $(".mil-arrow-place").each(function () {
+  if ($(this).find(".mil-arrow").length === 0) {
+    $(this).append(`<svg class="mil-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M14 5.34c-.26 0-.52.1-.71.29l-.09.09c-.39.39-.39 1.02 0 1.41L17.07 11H4c-.55 0-1 .45-1 1s.45 1 1 1h13.07l-3.78 3.86c-.39.39-.39 1.02 0 1.41l.09.09c.39.39 1.02.39 1.41 0l5.66-5.66c.39-.39.39-1.02 0-1.41L14.7 5.63a1.003 1.003 0 0 0-.71-.29z"/>
+    </svg>`);
+  }
+});
+
+        
         $(".mil-dodecahedron").clone().appendTo(".mil-animation");
         $(".mil-lines").clone().appendTo(".mil-lines-place");
         $(".mil-main-menu ul li.mil-active > a").clone().appendTo(".mil-current-page");
