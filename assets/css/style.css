@@ -600,6 +600,9 @@ button
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   box-sizing: border-box;
 }
+.mil-button.mil-button2 {
+  background-color: white;
+}
 .mil-button span {
   white-space: nowrap;
 }
@@ -614,9 +617,16 @@ button
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   box-sizing: border-box;
 }
+.mil-button.mil-button2 svg {
+  background-color: #ff9800;
+}
 .mil-button svg path {
   fill: rgb(255, 152, 0);
 }
+.mil-button.mil-button2 svg path {
+  fill: white;
+}
+
 .mil-button.mil-icon-button {
   padding: 15px;
 }
@@ -4640,4 +4650,12 @@ html.is-animating .mil-menu-frame {
 }
 .footer::before {
   display: none;
+}
+
+
+.bg-theme{
+  background-color:rgb(255, 152, 0);
+}
+.mil-light-soft2 {
+  color: #e4e3e3;
 }
