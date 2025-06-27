@@ -63,10 +63,14 @@
         <!-- menu -->
         <div class="mil-menu-frame">
             <!-- frame clone -->
-            <div class="mil-frame-top">
-                <a href="index.html" class="mil-logo">DecTac </a>
-                <div class="mil-menu-btn">
-                    <span></span>
+            <div class="container">
+
+                <div class="mil-frame-top">
+                    <a href="index.html" class="mil-logo">DecTac </a>
+                    
+                    <div class="mil-menu-btn">
+                        <span></span>
+                    </div>
                 </div>
             </div>
             <!-- frame clone end -->
@@ -167,22 +171,38 @@
         <!-- curtain end -->
 
         <!-- frame -->
-        <div class="mil-frame">
-            <div class="mil-frame-top">
-                <a href="/" class="mil-logo">DecTac.</a>
-                <div class="mil-menu-btn">
-                    <span></span>
+        <header class="mil-frame header">
+            <div class="container">
+                <div class="mil-frame-top">
+                    <a href="/" class="mil-logo">DecTac.</a>
+                    <nav class="d-lg-flex d-none">
+                        <ul>
+                            <li class=" mil-active">
+                                <a href="index.html" class="header-link active"><span>Homepage</span></a>
+                            </li>
+                            <li class="">
+                                <a href="about-us.html" class="header-link"><span>About Us</span></a>
+                            </li>
+                            <li class="">
+                                <a href="course.html" class="header-link"><span>Our Course</span></a>
+                            </li>
+                            <li class="">
+                                <a href="team.html" class="header-link"><span>Team</span></a>
+                            </li>
+                            <li class="">
+                                <a href="blog.html" class="header-link"><span>Newsletter</span></a>
+                            </li>
+                            <li class="">
+                                <a href="contact.html" class="header-link"><span>Contact Us</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mil-menu-btn">
+                        <span></span>
+                    </div>
                 </div>
             </div>
-            <div class="mil-frame-bottom">
-                <div class="mil-current-page"></div>
-                <div class="mil-back-to-top">
-                    <a href="#top" class="mil-link mil-dark mil-arrow-place">
-                        <span>Back to top</span>
-                    </a>
-                </div>
-            </div>
-        </div>
+        </header>
         <!-- frame end -->
 
         <!-- content -->
@@ -190,7 +210,7 @@
             <div id="swupMain" class="mil-main-transition">
 
                 <!-- banner -->
-                <section class="mil-banner mil-dark-bg hero-section">
+                <section class="mil-banner hero-section mil-dark-bg hero-section">
                     <div class="mi-invert-fix">
                         <div class="mil-animation-frame">
                             <div class="mil-animation mil-position-1 mil-scale" data-value-1="7" data-value-2="1.6"></div>
@@ -221,23 +241,23 @@
                                     <span>Contact Us</span>
                                 </a>
 
-                                <div class="mil-circle-text">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve" class="mil-ct-svg mil-rotate" data-value="360">
-                                        <defs>
-                                            <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
-                                        </defs>
-                                        <circle cx="150" cy="100" r="75" fill="none" />
-                                        <g>
-                                            <use xlink:href="#circlePath" fill="none" />
-                                            <text style="letter-spacing: 6.5px">
-                                                <!-- circle text -->
-                                                <textPath xlink:href="#circlePath">Scroll down - Scroll down - </textPath>
-                                            </text>
-                                        </g>
-                                    </svg>
-                                    <a href="#about" class="mil-button mil-arrow-place mil-icon-button mil-arrow-down"></a>
-                                </div>
-
+                                
+                            </div>
+                            <div class="mil-circle-text">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve" class="mil-ct-svg mil-rotate" data-value="360">
+                                    <defs>
+                                        <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
+                                    </defs>
+                                    <circle cx="150" cy="100" r="75" fill="none" />
+                                    <g>
+                                        <use xlink:href="#circlePath" fill="none" />
+                                        <text style="letter-spacing: 6.5px">
+                                            <!-- circle text -->
+                                            <textPath xlink:href="#circlePath">Scroll down - Scroll down - </textPath>
+                                        </text>
+                                    </g>
+                                </svg>
+                                <a href="#about" class="mil-button mil-arrow-place mil-icon-button mil-arrow-down"></a>
                             </div>
                         </div>
                     </div>
@@ -351,6 +371,7 @@
                                         </div>
                                     </a>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -433,6 +454,20 @@
                                     </div>
                                 </a>
                             </div>
+                            <div class="col-lg-4 col-md-6">
+                                <a href="flutter-detail.html" class="service-card mb-0 mil-more d-block">
+                                    <div class="service-icon mb-3"><img src="assets/img/flutter-icon.svg" alt="Flutter" class="h-100 w-100">
+                                    </div>
+                                    <h4 class="mil-up mil-mb-20 service-card-title">Flutter Developer</h4>
+                                    <p class="mil-descr mil-up mil-mb-20">This 12-week program is your hands-on path to becoming a job-ready Flutter
+                                        Developer. Designed for beginners and career-switchers alike, the course teaches
+                                        you to build full-featured mobile apps from scratch — using Flutter, Dart, and
+                                        AI-powered tools to streamline development.</p>
+                                    <div class="mil-link mil-dark mil-arrow-place mil-up">
+                                        <span>Read more</span>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -445,7 +480,7 @@
                             <div class="col-md-5 col-xl-5">
 
                                 <div class="mil-mb-90">
-                                    <h2 class="mil-up mil-mb-30 mil-muted">DecTac Team></h2>
+                                    <h2 class="mil-up mil-mb-30 mil-muted">DecTac Team</h2>
 
                                     <p class="mil-up mil-mb-60 mil-light-soft2">Our dynamic team blends IT expertise with cutting-edge AI tools to drive innovation. From automating processes to building intelligent solutions, we harness AI to Enhance-Productivity, creativity, and scalability. Together, we’re shaping the future of technology — delivering smarter, faster, and more impactful digital experiences.</p>
 
@@ -462,23 +497,6 @@
 
                                     <div class="row mil-mb-30">
                                         <div class="col-sm-6">
-
-                                            <div class="mil-team-card mil-up mil-mb-30">
-                                                <img src="assets/img/team/ajay-sir-1.webp" alt="Team member">
-                                                <div class="mil-description">
-                                                    <div class="mil-secrc-text">
-                                                        <h5 class="mil-muted mil-mb-5"><a href="ajay-sir.html">Ajay Sir</a></h5>
-                                                        <p class="mil-link mil-light-soft mil-mb-10">Laravel Developer</p>
-                                                        <ul class="mil-social-icons mil-center d-none">
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-behance"></i></a></li>
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-dribbble"></i></a></li>
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-twitter"></i></a></li>
-                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-github"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-
                                             <div class="mil-team-card mil-up mil-mb-30">
                                                 <img src="assets/img/team/rinku-sir-6.webp" alt="Team member">
                                                 <div class="mil-description">
@@ -494,12 +512,26 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+                                            <div class="mil-team-card mil-up mil-mb-30">
+                                                <img src="assets/img/team/ajay-sir-1.webp" alt="Team member">
+                                                <div class="mil-description">
+                                                    <div class="mil-secrc-text">
+                                                        <h5 class="mil-muted mil-mb-5"><a href="ajay-sir.html">Ajay Sir</a></h5>
+                                                        <p class="mil-link mil-light-soft mil-mb-10">Laravel Developer</p>
+                                                        <ul class="mil-social-icons mil-center d-none">
+                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-behance"></i></a></li>
+                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-dribbble"></i></a></li>
+                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-twitter"></i></a></li>
+                                                            <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-github"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
                                         <div class="col-sm-6">
 
                                             <p class="mil-mobile-hidden mil-text-sm mil-mb-30" style="height: 30px;"><span class="mil-accent">*</span> The Team of our agency</p>
-
                                             <div class="mil-team-card mil-up mil-mb-30">
                                                 <img src="assets/img/team/rashmi-mam-7.webp" alt="Team member">
                                                 <div class="mil-description">
@@ -840,7 +872,7 @@
                                             <nav class="mil-footer-menu mil-mb-30">
                                                 <ul>
                                                     <li class="mil-up mil-active">
-                                                        <a href="">Home</a>
+                                                        <a href="index.html">Home</a>
                                                     </li>
                                                     <li class="mil-up">
                                                         <a href="about-us.html">About Us</a>
@@ -864,8 +896,8 @@
                                         <div class="col-md-6 col-lg-5">
 
                                             <ul class="mil-menu-list mil-up mil-mb-60">
-                                                <li><a href="#." class="mil-light-soft">Privacy Policy</a></li>
-                                                <li><a href="#." class="mil-light-soft">Terms and conditions</a></li>
+                                                <li><a href="privacy.html" class="mil-light-soft">Privacy Policy</a></li>
+                                                <li><a href="terms-and-condition.html" class="mil-light-soft">Terms and conditions</a></li>
                                                 <li><a href="#." class="mil-light-soft">Cookie Policy</a></li>
                                                 <li><a href="#." class="mil-light-soft">Careers</a></li>
                                             </ul>

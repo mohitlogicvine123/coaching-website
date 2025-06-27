@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/plugins/bootstrap-grid.css">
     <!-- font awesome css -->
     <link rel="stylesheet" href="assets/css/plugins/font-awesome.min.css"> 
-<!-- favicon icon -->
+    <!-- favicon icon -->
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <!-- swiper css -->
     <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
@@ -25,7 +25,6 @@
 </head>
 
 <body>
-
     <!-- wrapper -->
     <div class="mil-wrapper" id="top">
 
@@ -64,10 +63,14 @@
         <!-- menu -->
         <div class="mil-menu-frame">
             <!-- frame clone -->
-            <div class="mil-frame-top">
-                <a href="index.html" class="mil-logo">DecTac </a>
-                <div class="mil-menu-btn">
-                    <span></span>
+            <div class="container">
+
+                <div class="mil-frame-top">
+                    <a href="index.html" class="mil-logo">DecTac </a>
+                    
+                    <div class="mil-menu-btn">
+                        <span></span>
+                    </div>
                 </div>
             </div>
             <!-- frame clone end -->
@@ -79,6 +82,9 @@
                                 <ul>
                                     <li class="mil-has-children mil-active">
                                         <a href="index.html">Homepage</a>
+                                    </li>
+                                    <li class="mil-has-children">
+                                        <a href="about-us.html">About Us</a>
                                     </li>
                                     <li class="mil-has-children">
                                         <a href="course.html">Our Course</a>
@@ -165,22 +171,38 @@
         <!-- curtain end -->
 
         <!-- frame -->
-        <div class="mil-frame">
-            <div class="mil-frame-top">
-                <a href="/" class="mil-logo">DecTac.</a>
-                <div class="mil-menu-btn">
-                    <span></span>
+        <header class="mil-frame header">
+            <div class="container">
+                <div class="mil-frame-top">
+                    <a href="/" class="mil-logo">DecTac.</a>
+                    <nav class="d-lg-flex d-none">
+                        <ul>
+                            <li class=" mil-active">
+                                <a href="index.html" class="header-link active"><span>Homepage</span></a>
+                            </li>
+                            <li class="">
+                                <a href="about-us.html" class="header-link"><span>About Us</span></a>
+                            </li>
+                            <li class="">
+                                <a href="course.html" class="header-link"><span>Our Course</span></a>
+                            </li>
+                            <li class="">
+                                <a href="team.html" class="header-link"><span>Team</span></a>
+                            </li>
+                            <li class="">
+                                <a href="blog.html" class="header-link"><span>Newsletter</span></a>
+                            </li>
+                            <li class="">
+                                <a href="contact.html" class="header-link"><span>Contact Us</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mil-menu-btn">
+                        <span></span>
+                    </div>
                 </div>
             </div>
-            <div class="mil-frame-bottom">
-                <div class="mil-current-page"></div>
-                <div class="mil-back-to-top">
-                    <a href="#top" class="mil-link mil-dark mil-arrow-place">
-                        <span>Back to top</span>
-                    </a>
-                </div>
-            </div>
-        </div>
+        </header>
         <!-- frame end -->
 
         <!-- content -->
@@ -262,7 +284,7 @@
                             <div class="row justify-content-between">
                                 <div class="col-md-4 col-lg-4 mil-mb-60">
 
-                                    <div class="mil-muted mil-logo mil-up mil-mb-30">DecTac.</div>
+                                    <div class="mil-muted mil-logo mil-up mil-mb-30 ">DecTac.</div>
 
                                     <p class="mil-light-soft mil-up mil-mb-30">Subscribe our newsletter:</p>
 
@@ -279,9 +301,12 @@
                                             <nav class="mil-footer-menu mil-mb-30">
                                                 <ul>
                                                     <li class="mil-up mil-active">
-                                                        <a href="">Home</a>
+                                                        <a href="index.html">Home</a>
                                                     </li>
                                                     <li class="mil-up">
+                                                        <a href="about-us.html">About Us</a>
+                                                    </li>
+                                                     <li class="mil-up">
                                                         <a href="course.html">Our Course</a>
                                                     </li>
                                                      <li class="mil-up">
@@ -300,8 +325,8 @@
                                         <div class="col-md-6 col-lg-5">
 
                                             <ul class="mil-menu-list mil-up mil-mb-60">
-                                                <li><a href="#." class="mil-light-soft">Privacy Policy</a></li>
-                                                <li><a href="#." class="mil-light-soft">Terms and conditions</a></li>
+                                                <li><a href="privacy.html" class="mil-light-soft">Privacy Policy</a></li>
+                                                <li><a href="terms-and-condition.html" class="mil-light-soft">Terms and conditions</a></li>
                                                 <li><a href="#." class="mil-light-soft">Cookie Policy</a></li>
                                                 <li><a href="#." class="mil-light-soft">Careers</a></li>
                                             </ul>

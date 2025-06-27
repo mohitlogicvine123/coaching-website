@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/plugins/bootstrap-grid.css">
     <!-- font awesome css -->
     <link rel="stylesheet" href="assets/css/plugins/font-awesome.min.css"> 
-<!-- favicon icon -->
+    <!-- favicon icon -->
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <!-- swiper css -->
     <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
@@ -25,10 +25,23 @@
 </head>
 
 <body>
-
     <!-- wrapper -->
     <div class="mil-wrapper" id="top">
 
+        <!-- whatsapp button start -->
+        <div class="whatsapp-btn d-flex align-items-center justify-content-center position-fixed rounded-circle text-decoration-none">
+            <a href="https://api.whatsapp.com/send?phone=917073913064" target="_blank" aria-label="whatsapp" class="d-flex align-items-center justify-content-center h-100 w-100 position-relative z-1 text-decoration-none">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <span class="whatsapp-btn-title block text-center border d-none bg-white position-absolute text-decoration-none alert alert-dismissible fade show" role="alert">
+                Need Help ? <strong class="text-black">Chat With Us</strong>
+                <button type="button" class="btn-close p-0 bg-white rounded-circle opacity-100 position-absolute" data-bs-dismiss="alert" aria-label="Close">
+                <i class="fa-regular fa-circle-xmark"></i>
+                </button>
+            </span>
+        </div>
+        <!-- whatsapp button end -->
+         
         <!-- cursor -->
         <div class="mil-ball">
             <span class="mil-icon-1">
@@ -50,10 +63,14 @@
         <!-- menu -->
         <div class="mil-menu-frame">
             <!-- frame clone -->
-            <div class="mil-frame-top">
-                <a href="index.html" class="mil-logo">A.</a>
-                <div class="mil-menu-btn">
-                    <span></span>
+            <div class="container">
+
+                <div class="mil-frame-top">
+                    <a href="index.html" class="mil-logo">DecTac </a>
+                    
+                    <div class="mil-menu-btn">
+                        <span></span>
+                    </div>
                 </div>
             </div>
             <!-- frame clone end -->
@@ -61,50 +78,28 @@
                 <div class="mil-menu-content">
                     <div class="row">
                         <div class="col-xl-5">
-
                             <nav class="mil-main-menu" id="swupMenu">
                                 <ul>
-                                    <li class="mil-has-children">
-                                        <a href="#.">Homepage</a>
-                                        <ul>
-                                            <li><a href="index.html">Landing page</a></li>
-                                            <li><a href="index.html">Personal</a></li>
-                                            <li><a href="portfolio-3.html">Portfolio slider</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="#.">Portfolio</a>
-                                        <ul>
-                                            <li><a href="contact.html">Grid type 1</a></li>
-                                            <li><a href="portfolio-2.html">Grid type 2</a></li>
-                                            <li><a href="portfolio-3.html">Slider</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="#.">Services</a>
-                                        <ul>
-                                            <li><a href="services.html">Services List</a></li>
-                                            <li><a href="course-detail.html">Single service</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="#.">Newsletter</a>
-                                        <ul>
-                                            <li><a href="blog.html">Blog List</a></li>
-                                            <li><a href="blog-detail.html">Publication</a></li>
-                                        </ul>
-                                    </li>
                                     <li class="mil-has-children mil-active">
-                                        <a href="#.">Other pages</a>
-                                        <ul>
-                                            <li><a href="team.html">Team</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="404.html">404</a></li>
-                                        </ul>
+                                        <a href="index.html">Homepage</a>
+                                    </li>
+                                    <li class="mil-has-children">
+                                        <a href="about-us.html">About Us</a>
+                                    </li>
+                                    <li class="mil-has-children">
+                                        <a href="course.html">Our Course</a>
+                                    </li>
+                                    <li class="mil-has-children">
+                                        <a href="team.html">Team</a>
+                                    </li>
+                                    <li class="mil-has-children">
+                                        <a href="blog.html">Newsletter</a>
+                                    </li>
+                                    <li class="mil-has-children">
+                                        <a href="contact.html">Contact Us</a>
                                     </li>
                                 </ul>
                             </nav>
-
                         </div>
                         <div class="col-xl-7">
 
@@ -176,22 +171,38 @@
         <!-- curtain end -->
 
         <!-- frame -->
-        <div class="mil-frame">
-            <div class="mil-frame-top">
-                <a href="index.html" class="mil-logo">A.</a>
-                <div class="mil-menu-btn">
-                    <span></span>
+        <header class="mil-frame header">
+            <div class="container">
+                <div class="mil-frame-top">
+                    <a href="/" class="mil-logo">DecTac.</a>
+                    <nav class="d-lg-flex d-none">
+                        <ul>
+                            <li class=" mil-active">
+                                <a href="index.html" class="header-link active"><span>Homepage</span></a>
+                            </li>
+                            <li class="">
+                                <a href="about-us.html" class="header-link"><span>About Us</span></a>
+                            </li>
+                            <li class="">
+                                <a href="course.html" class="header-link"><span>Our Course</span></a>
+                            </li>
+                            <li class="">
+                                <a href="team.html" class="header-link"><span>Team</span></a>
+                            </li>
+                            <li class="">
+                                <a href="blog.html" class="header-link"><span>Newsletter</span></a>
+                            </li>
+                            <li class="">
+                                <a href="contact.html" class="header-link"><span>Contact Us</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mil-menu-btn">
+                        <span></span>
+                    </div>
                 </div>
             </div>
-            <div class="mil-frame-bottom">
-                <div class="mil-current-page"></div>
-                <div class="mil-back-to-top">
-                    <a href="#top" class="mil-link mil-dark mil-arrow-place">
-                        <span>Back to top</span>
-                    </a>
-                </div>
-            </div>
-        </div>
+        </header>
         <!-- frame end -->
 
         <!-- content -->
