@@ -8,7 +8,7 @@
     <!-- font awesome css -->
     <link rel="stylesheet" href="assets/css/plugins/font-awesome.min.css"> 
     <!-- favicon icon -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
     <!-- swiper css -->
     <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
     <!-- fancybox css -->
@@ -30,7 +30,7 @@
 
         <!-- whatsapp button start -->
         <div class="whatsapp-btn d-flex align-items-center justify-content-center position-fixed rounded-circle text-decoration-none">
-            <a href="https://api.whatsapp.com/send?phone=917073913064" target="_blank" aria-label="whatsapp" class="d-flex align-items-center justify-content-center h-100 w-100 position-relative z-1 text-decoration-none">
+            <a href="https://api.whatsapp.com/send?phone=917073913064&text=Hello" target="_blank" aria-label="whatsapp" class="d-flex align-items-center justify-content-center h-100 w-100 position-relative z-1 text-decoration-none">
                 <i class="fab fa-whatsapp"></i>
             </a>
             <span class="whatsapp-btn-title block text-center border d-none bg-white position-absolute text-decoration-none alert alert-dismissible fade show" role="alert">
@@ -66,7 +66,9 @@
             <div class="container">
 
                 <div class="mil-frame-top">
-                    <a href="index.html" class="mil-logo">DecTac </a>
+                    <a href="index.html" class="mil-logo main-logo">
+                        <img src="assets/img/logo.svg " alt="dectac" class="h-100 w-100">
+                    </a>
                     
                     <div class="mil-menu-btn">
                         <span></span>
@@ -174,7 +176,9 @@
         <header class="mil-frame header">
             <div class="container">
                 <div class="mil-frame-top">
-                    <a href="/" class="mil-logo">DecTac.</a>
+                    <a href="/" class="mil-logo main-logo">
+                        <img src="assets/img/logo.svg " alt="dectac" class="h-100">
+                    </a>
                     <nav class="d-lg-flex d-none">
                         <ul>
                             <li class=" mil-active">
@@ -265,10 +269,10 @@
                 <!-- banner end -->
 
                 <!-- about -->
-                <section id="about">
+                <section id="about" class="home-about">
                     <div class="container mil-p-120-30">
                         <div class="row justify-content-between align-items-center">
-                            <div class="col-md-6 col-xl-5">
+                            <div class="col-md-6 col-xl-5 order-md-1 order-2 mt-md-0 mt-4">
 
                                 <div class="mil-mb-90">
                                     <h2 class="mil-up mil-mb-15">Revolutionizing IT <span class="mil-thin hero-text">for the Next Generation</span></h2>
@@ -286,12 +290,24 @@
                                 </div>
 
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-5 order-md-2 order-1">
 
-                                <div class="mil-about-photo mil-mb-90">
+                                <div class="mil-about-photo">
                                     <div class="mil-lines-place"></div>
-                                    <div class="mil-up mil-img-frame" style="padding-bottom: 160%;">
-                                        <img src="assets/img/photo/1.jpg" alt="img" class="mil-scale" data-value-1="1" data-value-2="1.2">
+                                    <div class="mil-up mil-img-frame">
+                                        <!-- <img src="assets/img/photo/1.jpg" alt="img" class="mil-scale" data-value-1="1" data-value-2="1.2"> -->
+                                       <video 
+                                            src="assets/img/about.mp4" 
+                                            autoplay 
+                                            muted 
+                                            loop 
+                                            playsinline 
+                                            class="about-video w-full h-auto object-cover rounded-lg shadow-lg"
+                                            data-value-1="1" 
+                                            data-value-2="1.2">
+                                            Your browser does not support the video tag.
+                                        </video>
+
                                     </div>
                                 </div>
 
@@ -484,7 +500,7 @@
 
                                     <p class="mil-up mil-mb-60 mil-light-soft2">Our dynamic team blends IT expertise with cutting-edge AI tools to drive innovation. From automating processes to building intelligent solutions, we harness AI to Enhance-Productivity, creativity, and scalability. Together, we’re shaping the future of technology — delivering smarter, faster, and more impactful digital experiences.</p>
 
-                                    <div class="mil-up"><a href="team.html" class="mil-button mil-button2 mil-arrow-place mil-mb-60"><span>Read more</span></a></div>
+                                    <div class="mil-up"><a href="team.html" class="mil-button mil-button2 mil-arrow-place mil-mb-60"><span>All Team</span></a></div>
 
                                     <h4 class="mil-up"><span class="mil-thin">We</span> delivering <span class="mil-thin">exceptional</span> results.</h4>
                                 </div>
@@ -853,19 +869,28 @@
                     <div class="mi-invert-fix">
                         <div class="container mil-p-120-60">
                             <div class="row justify-content-between">
-                                <div class="col-md-4 col-lg-4 mil-mb-60">
+                                <div class="col-md-4 col-lg-4">
 
-                                    <div class="mil-muted mil-logo mil-up mil-mb-30 ">DecTac.</div>
+                                    <div class="mil-muted mil-logo mil-up mil-mb-30 footer-logo ">
+                                        <img src="assets/img/logo.svg" alt="dectac">
+                                    </div>
 
                                     <p class="mil-light-soft mil-up mil-mb-30">Subscribe our newsletter:</p>
 
-                                    <form class="mil-subscribe-form mil-up">
+                                    <form class="mil-subscribe-form mil-up mil-mb-30">
                                         <input type="text" placeholder="Enter our email">
                                         <button type="submit" class="mil-button mil-icon-button-sm mil-arrow-place"></button>
                                     </form>
-
+                                    <div class=" mil-mb-30">
+                                            <h6 class="mil-muted mil-up mil-mb-10">Jaipur</h6>
+                                            <p class="mil-light-soft mil-up">
+                                                IMG Global Infotech Pvt. Ltd
+                                                880, Gautam Marg, Ranisati Nagar
+                                                <span class="mil-no-wrap "><br>Jaipur, Rajasthan 302019</span>
+                                            </p>
+                                        </div>
                                 </div>
-                                <div class="col-md-7 col-lg-6">
+                                <div class="col-md-7 col-lg-6 mt-md-0 mt-4">
                                     <div class="row justify-content-end">
                                         <div class="col-md-6 col-lg-7">
 
@@ -901,30 +926,7 @@
                                                 <li><a href="#." class="mil-light-soft">Cookie Policy</a></li>
                                                 <li><a href="#." class="mil-light-soft">Careers</a></li>
                                             </ul>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row justify-content-between flex-sm-row-reverse">
-                                <div class="col-md-7 col-lg-6">
-
-                                    <div class="row justify-content-end">
-                                        <div class="col-md-6 col-lg-5 mil-mb-30">
-
-                                            <h6 class="mil-muted mil-up mil-mb-30">Jaipur</h6>
-
-                                            <p class="mil-light-soft mil-up">Chitrakoot Vaishali Nagar , Jaipur 302021<span class="mil-no-wrap "><br>+31 174 705 811</span></p>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-md-4 col-lg-6 mil-mb-30">
-
-                                    <div class="mil-vert-between">
-                                        <div class="mil-mb-30">
+                                            <div class="mil-mb-30">
                                             <ul class="mil-social-icons mil-up">
                                                 <li><a href="#." target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
                                                 <li><a href="#." target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
@@ -933,9 +935,8 @@
                                                 <li><a href="#." target="_blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
                                             </ul>
                                         </div>
-                                        <p class="mil-light-soft mil-up">© Copyright 2025 - All Rights Reserved.</p>
+                                        </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
