@@ -1810,7 +1810,7 @@ banner
 }
 @media screen and (max-width:767px){
    .mil-inner-banner .mil-banner-content {
-    padding-top: 95px;
+    padding-top: 40px;
   }
 }
 
@@ -4724,7 +4724,7 @@ html.is-animating .mil-menu-frame {
 }
 .header ul .header-link:hover,
 .header ul .header-link.active{
-  color: black;
+  color: white;
 }
 .hero-section .container {
   align-items: center;
@@ -4755,4 +4755,197 @@ html.is-animating .mil-menu-frame {
 }
 .home-about .mil-img-frame {
   padding-bottom: 0;
+}
+
+
+.mission-vision-section {
+  font-family: 'Poppins', sans-serif;
+}
+
+.training-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.mission-block, .vision-block {
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+}
+
+.mission-watermark, .vision-watermark {
+  position: absolute;
+  top: 15px;
+  left: 35px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.1);
+  line-height: 1;
+  z-index: -1;
+}
+.bg-primary {
+  background-color: var(--theme1) !important;
+  position: relative;
+}
+
+.text-light {
+  color: #ecf0f1 !important;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+.mission-vision-section .mission-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.bg-primary::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  background: #f58a54;
+  height: 100%;
+  width: 0.5px;
+}
+
+@media (max-width: 767.98px) {
+  .mission-watermark, .vision-watermark {
+    font-size: 2.5rem;
+    top: 10px;
+  }
+  .mission-block {
+    border-bottom: 1px solid rgba(255,255,255,0.25) !important;
+    border-right: none !important;
+  }
+  .main-logo {
+    height: 25px;
+  }
+  .bg-primary::before{
+    display: none;
+  }
+  .mission-block, .vision-block {
+    padding: 15px;
+  }
+  .mission-watermark, .vision-watermark {
+    left: 20px;
+  }
+  .mission-vision-section .mission-title {
+    margin-bottom: 15px;
+  }
+}
+
+
+.video-promo-container {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+}
+.video-promo-container .video-thumbnail {
+  height:100%;
+  width: 100%;
+}
+.pulse-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 170px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    z-index: 1;
+}
+.pulse-btn-main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.pulse-btn__icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background: #FF0000;
+    border-radius: 50%;
+    z-index: 3;
+    transition: all 0.3s ease;
+}
+
+.pulse-btn__icon i {
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.pulse-btn__text {
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+  z-index: 3;
+}
+.pulse-btn__rings {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #FF0000;
+  border-radius: 50%;
+  animation: pulse 3s linear infinite;
+  opacity: 0;
+  z-index: 2;
+}
+
+.pulse-btn__rings:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.pulse-btn__rings:nth-child(4) {
+  animation-delay: 2s;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+.pulse-btn:hover .pulse-btn__icon {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+}
+@media (max-width: 768px) {
+  .pulse-btn {
+    width: 90px;
+    height: 90px;
+  }
+  .pulse-btn__icon {
+    width: 50px;
+    height: 50px;
+  }
+  .pulse-btn__icon i {
+    font-size: 17px;
+  }
+}
+.video-promo-container img {
+  width: 100%;
+}
+.video-promo-container:hover img {
+    opacity: 0.9;
 }
