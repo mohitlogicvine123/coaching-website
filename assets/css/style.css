@@ -4787,7 +4787,9 @@ html.is-animating .mil-menu-frame {
   z-index: 1;
   padding: 40px;
 }
-
+.vision-block {
+  background-color: gray;
+}
 .mission-watermark, .vision-watermark {
   position: absolute;
   top: 15px;
